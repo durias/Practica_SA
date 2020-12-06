@@ -6,5 +6,10 @@ pipeline {
                 sh 'npm --version'
             }
         }
+         stage('run') {
+            steps {
+                sh 'node app.js'
+            }
+        }
     }
 }
