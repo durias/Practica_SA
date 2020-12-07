@@ -10,6 +10,7 @@ pipeline {
             steps {
                 sh 'mocha'
             }
+        }    
          stage('run') {
             steps {
                 sh 'node app.js'
