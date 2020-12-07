@@ -6,6 +6,10 @@ pipeline {
                 sh 'npm --version'
             }
         }
+        stage('test') {
+            steps {
+                sh 'mocha'
+            }
          stage('run') {
             steps {
                 sh 'node app.js'
