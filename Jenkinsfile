@@ -13,8 +13,8 @@ pipeline {
         }    
          stage('run') {
             steps {
-                sh 'forever stop app.js'
-                sh 'forever start app.js'
+            
+                sh 'forever -w start app.js'
             }
         }
     }
