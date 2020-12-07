@@ -13,7 +13,8 @@ pipeline {
         }    
          stage('run') {
             steps {
-                sh 'nodemon app.js'
+                sh 'forever stop app.js'
+                sh 'forever start app.js'
             }
         }
     }
