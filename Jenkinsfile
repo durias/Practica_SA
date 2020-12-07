@@ -13,7 +13,7 @@ pipeline {
         }    
          stage('run') {
             steps {
-                sh 'node app.js'
+                sh 'forever -w start app.js'
             }
         }
     }
